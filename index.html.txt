@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO CARD -->
+<div class="intro" id="intro">
+  <div class="card" onclick="startExperience()">
+    <h2>For you</h2>
+    <p>
+      To the prettiest, ever-smiling beautiful girl<br>
+      who tries to make everyone happy.<br><br>
+      Hope this makes you smile.
+    </p>
+    <span class="tap">Tap to continue</span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content hidden" id="content">
+
+  <audio id="music" src="bin-tere.mp3"></audio>
+
+  <div class="slideshow">
+    <img src="img1.jpg" class="active">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+    <img src="img4.jpg">
+    <img src="img5.jpg">
+    <img src="img6.jpg">
+    <img src="img7.jpg">
+    <img src="img8.jpg">
+  </div>
+
+  <!-- FINAL LINE -->
+  <div class="final-line" id="finalLine">
+    No grand promises.<br>
+    Just choosing you, quietly, every day.
+  </div>
+
+  <!-- QUESTION -->
+  <div class="question hidden" id="question">
+    <p>Will you be my Valentine?</p>
+    <div class="buttons">
+      <button onclick="yesClicked()">Yes</button>
+      <button onclick="noClicked()">No</button>
+    </div>
+  </div>
+
+  <!-- SMILE -->
+  <div class="smile hidden" id="smile">😊</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
