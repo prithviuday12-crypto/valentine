@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Georgia", serif;
   background: #fdf6f0;
   display: flex;
   justify-content: center;
@@ -8,34 +8,51 @@ body {
   height: 100vh;
 }
 
-/* Intro Screen */
+/* INTRO CARD */
 .intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  width: 280px;
   text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   cursor: pointer;
 }
 
-.intro h1 {
-  font-size: 26px;
-  margin-bottom: 10px;
+.card h2 {
+  margin-bottom: 15px;
 }
 
-.intro p {
-  font-size: 14px;
-  color: #555;
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-/* Main Content */
+.tap {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* MAIN CONTENT */
 .content {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 420px;
 }
 
 .hidden {
   display: none;
 }
 
-/* Slideshow */
+/* SLIDESHOW */
 .slideshow img {
   position: absolute;
   width: 100%;
@@ -49,14 +66,50 @@ body {
   opacity: 1;
 }
 
-/* Final Text */
+/* FINAL LINE */
 .final-line {
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   width: 100%;
   text-align: center;
-  font-size: 16px;
-  color: #222;
+  font-size: 15px;
   opacity: 0;
   transition: opacity 2s ease;
+}
+
+/* QUESTION */
+.question {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.question p {
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  margin: 0 8px;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* SMILE */
+.smile {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
 }
